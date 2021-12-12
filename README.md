@@ -1,0 +1,1 @@
+# curriculo_LucasOs4kwe
