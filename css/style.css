@@ -1,5 +1,6 @@
 * {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    user-select: none;
 }
 body{
     margin: 0;
@@ -14,6 +15,10 @@ ul{
 }
 ul, li, p, h1, h2, h3, a {
     margin: 0;
+    padding: 0;
+}
+li{
+    font-size: 15px;
 }
 
 /* CONTAINER PRINCIPAL */
@@ -24,7 +29,7 @@ ul, li, p, h1, h2, h3, a {
 #content-container{
     display: grid;
     width: 75%;
-    height: 100vh;
+    height: fit-content;
     grid-template-columns: 30% 70%;
     grid-template-areas:
     "aside_left cursos"
@@ -33,7 +38,7 @@ ul, li, p, h1, h2, h3, a {
     margin: 2vh;
 }
 #left_aside_content, #courses-container, #education-container{
-    background-color: rgb(148, 146, 146);
+    background-color: rgb(233, 229, 229);
 }
 #left_aside_content{
     grid-area: aside_left;
@@ -43,4 +48,99 @@ ul, li, p, h1, h2, h3, a {
 }
 #education-container{
     grid-area: education;
+}
+
+/* ASIDE CONTAINER */
+
+/* PERSONAL PIC */
+#person-pic img{
+    width: 100%;
+    max-height: 500px;
+}
+
+/* PERSONAL-DATA */
+#personal-data{
+    /* padding: 20px 0 20px 10px; */
+}
+#personal-data ul li{
+    margin-bottom: 15px;
+}
+#personal-data ul li:nth-child(4){
+    margin-bottom: 0;
+}
+.fas{
+    font-size: 18px;
+    padding-right: 10px;
+    color: rgb(16, 115, 191);
+}
+#aside_left_internalDiv{
+    padding: 15px;
+}
+#line{
+    width: 100%;
+    background-color: black;
+    height: 1px;
+    margin: 20px 0 20px 0;
+}
+.title_div{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+
+
+.box-title{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
+
+.skill-box{
+    margin: 20px 0 20px 0;
+}
+.skill-percent{
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+    height: 2.2vh;
+    background-color: rgb(201, 201, 201);
+}
+.progress-bar{
+    background-color: rgb(16, 115, 191);
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+.progressBar-text{
+    color: white;
+    font-size: 13px;
+}
+#progressBar-skill_1{
+    width: 35%;
+}
+#progressBar-skill_2{
+    width: 80%;
+}
+
+/* LÍNGUAS */
+.lang-box{
+    margin: 20px 0 20px 0;
+}
+.lang-percent{
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+    height: 2.2vh;
+    background-color: rgb(201, 201, 201);
+}
+#progressBar-lang_1{
+    width: 100%;
+}
+#progressBar-lang_2{
+    width: 60%;
+}
+#progressBar-lang_3{
+    width: 40%;
 }
