@@ -5,6 +5,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: rgb(43, 42, 42);
 }
 body::-webkit-scrollbar{
     width: 0;
@@ -23,6 +24,7 @@ ul{
 ul, li, p, h1, h2, h3, a {
     margin: 0;
     padding: 0;
+    color: rgb(220, 216, 216);
 }
 li{
     font-size: 15px;
@@ -46,9 +48,9 @@ li{
     margin: 2vh;
 }
 #left_aside_content, #courses-container, #education-container{
-    background-color: rgb(233, 229, 229);
+    background-color: rgb(29, 27, 27);
     /* box-shadow: [inset][h-offset][v-offset][blur][spread][color]; */
-    box-shadow: 1px 3px 10px 5px rgb(172, 172, 172);
+    /* box-shadow: 1px 3px 10px 5px rgb(172, 172, 172); */
 }
 #left_aside_content{
     grid-area: aside_left;
@@ -63,6 +65,14 @@ li{
 /* ASIDE CONTAINER */
 
 /* PERSONAL PIC */
+#person-pic h1{
+    position: absolute;
+    top: 450px;
+    background-color: rgb(29, 27, 27);
+    padding: 0px 10px 0px 1px;
+    border-radius: 0px 10px 10px 0px;
+}
+
 #person-pic img{
     width: 100%;
     max-height: 500px;
@@ -81,21 +91,21 @@ li{
 .fas, .far{
     font-size: 18px;
     padding-right: 10px;
-    color: rgb(16, 115, 191);
+    color: #95bd28;
 }
 #aside_left_internalDiv{
     padding: 15px;
 }
 .line{
     width: 100%;
-    background-color: black;
+    background-color: #95bd28;
     height: 1px;
     margin: 20px 0 20px 0;
 }
 .title_div{
     font-weight: bold;
     font-size: 20px;
-    color: black;
+    color: #95bd28;
     margin-left: 10px;
 }
 
@@ -115,20 +125,33 @@ li{
     background-color: rgb(201, 201, 201);
 }
 .progress-bar{
-    background-color: rgb(16, 115, 191);
+    background-color: #95bd28;
     height: 100%;
     border-radius: 20px;
     text-align: center;
 }
 .progressBar-text{
-    color: white;
+    color: rgb(43, 42, 42);
+    font-weight: 500;
     font-size: 13px;
 }
 #progressBar-skill_1{
-    width: 35%;
+    width: 70%;
 }
 #progressBar-skill_2{
-    width: 80%;
+    width: 30%;
+}
+#progressBar-skill_3{
+    width: 40%;
+}
+#progressBar-skill_4{
+    width: 30%;
+}
+#progressBar-skill_5{
+    width: 30%;
+}
+#progressBar-skill_6{
+    width: 20%;
 }
 
 /* LÍNGUAS */
@@ -151,6 +174,7 @@ li{
 #progressBar-lang_3{
     width: 40%;
 }
+
 
 
 
@@ -179,11 +203,11 @@ li{
     align-items: center;
 }
 .time-description{
-    color: rgb(16, 115, 191);
+    color: #95bd28;
 }
 .current-time{
-    background-color: rgb(16, 115, 191);
-    color: white;
+    background-color: #95bd28;
+    color: rgb(43, 42, 42);
     border-radius: 8px;
     padding: 2px 5px 2px 5px;
 }
@@ -195,7 +219,7 @@ li{
     width: 10px;
 }
 #courses-container::-webkit-scrollbar-thumb{
-    background-color: rgb(16, 115, 191);
+    background-color: #95bd28;
 }
 
 
@@ -218,23 +242,27 @@ li{
 .subtitle{
     font-weight: normal;
     font-size: 15px;
-    background-color: rgb(201, 201, 201);
+    background-color: #95bd28;
     width: fit-content;
     padding: 0.1px 2px;
     border-radius: 5px;
+    color: rgb(43, 42, 42);
 }
 
 /* FOOTER */
 footer{
-    background-color: rgb(16, 115, 191);
+    background-color: #95bd28;
     height: 100%;
     margin-top: 3vh;
 }
 footer a{
-    color: white;
+    color: rgb(43, 42, 42);
 }
 footer a:hover{
     color: rgb(223, 222, 222);
+}
+footer p{
+    color: rgb(43, 42, 42);
 }
 .content-footer{
     padding: 15px;
